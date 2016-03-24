@@ -1,0 +1,59 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+<servlet>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <servlet-class>DispatcherServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <url-pattern>/DispatcherServlet</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>LinkSaveServlet</servlet-name>
+        <servlet-class>LinkSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LinkSaveServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LinkSummaryServlet</servlet-name>
+        <servlet-class>LinkSummaryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LinkSummaryServlet</servlet-name>
+        <url-pattern>/summary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>SignInServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>SignUpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

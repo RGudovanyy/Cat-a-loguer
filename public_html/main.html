@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlackCat</title>
+</head>
+<body>
+<center>
+<form action="/save" method="post">
+    <input type="url" name="url" placeholder="Type URL here to save" />
+    <input type="submit" value="Save">
+    <input type="hidden" name="login" value="admin">
+
+    </form>
+<form action="/summary" method="get">
+    <input type="submit" value="Get summary of links">
+    <input type="hidden" name="login" value="admin">
+</form>
+</center>
+</body>
+</html>
